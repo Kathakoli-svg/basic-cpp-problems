@@ -4,7 +4,7 @@ using namespace std;
 void printdivisors(int n){
 	vector<int> v;
 	
-	for(int i=1;i<=sqrt(n);i++){
+	for(int i=1;i*i<=n;i++){  //i<=sqrt(n) = i*i<=n
 		if(n%i==0){
 			v.push_back(i);
 			if((n/i) != i){
